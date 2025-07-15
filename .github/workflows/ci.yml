@@ -1,7 +1,4 @@
-
 ### Contenido de `ci.yml`:
-
-```yaml
 name: Validar y Desplegar Sitio
 
 on:
