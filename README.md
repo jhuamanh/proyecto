@@ -1,7 +1,6 @@
 # 🚀 Pipeline CI/CD con GitHub Actions + GitHub Pages
 
 Este repositorio implementa una pipeline completa de **Integración y Despliegue Continuo (CI/CD)** utilizando **GitHub Actions**.
-
 ---
 
 ## ✅ Objetivo
