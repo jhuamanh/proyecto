@@ -1,6 +1,6 @@
 # 🚀 Pipeline CI/CD con GitHub Actions + GitHub Pages
 
-Este repositorio implementa una pipeline
+Este repositorio implementa una pipeline.
 
 ---
 
