@@ -15,3 +15,4 @@ Este repositorio implementa una pipeline completa de **Integración y Despliegue
 
 El archivo del workflow se encuentra en:
 
+- Contribución realizada a través de un pull request
