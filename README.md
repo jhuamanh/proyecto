@@ -18,4 +18,4 @@ Este repositorio implementa una pipeline
 
 El archivo del workflow se encuentra en:
 
-- Contribución realizada a través de un pull request, modificacion
+- Contribución realizada a través de un pull request, se modifica nuevamente
