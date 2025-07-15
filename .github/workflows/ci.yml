@@ -1,6 +1,5 @@
 ### Contenido de `ci.yml`:
 name: Validar y Desplegar Sitio
-
 on:
   push:
     branches: [main]
