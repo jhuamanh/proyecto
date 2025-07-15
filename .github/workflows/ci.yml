@@ -1,0 +1,51 @@
+name: Validar y Desplegar Sitio
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  markdown-lint:
+    name: Validar Markdown
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Instalar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Instalar markdownlint-cli
+        run: npm install -g markdownlint-cli
+
+      - name: Ejecutar markdownlint
+        run: markdownlint "**/*.md"
+
+  deploy:
+    name: Desplegar a GitHub Pages
+    if: github.ref == 'refs/heads/main'
+    needs: markdown-lint
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v4
+
+      - name: Configurar Pages
+        uses: actions/configure-pages@v4
+
+      - name: Subir archivos
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: . # Publicamos desde la raíz
+
+      - name: Publicar en GitHub Pages
+        uses: actions/deploy-pages@v2
