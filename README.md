@@ -13,12 +13,4 @@ Este repositorio implementa una pipeline
 
 ---
 
-## ⚙️ Estructura del Workflow
 
-El archivo del workflow se encuentra en:
-
-<<<<<<< HEAD
-- Contribución realizada a través de un pull request
-=======
-- Contribución realizada a través de un pull request, se modifica nuevamente
->>>>>>> 348f9d515d2588e40d8e63540d0c29e577f1efb1
