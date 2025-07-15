@@ -1,3 +1,4 @@
+### Contenido de `ci.yml`:
 name: Validar y Desplegar Sitio
 
 on:
@@ -38,6 +39,8 @@ jobs:
 
       - name: Subir archivos como artefacto
         uses: actions/upload-pages-artifact@v3
+        with:
+          path: . # Publicamos desde la raíz
 
       - name: Publicar en GitHub Pages
         uses: actions/deploy-pages@v4
