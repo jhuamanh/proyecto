@@ -1,13 +1,16 @@
 # 🚀 Pipeline CI/CD con GitHub Actions + GitHub Pages
 
-Este repositorio implementa una pipeline completa de **Integración y Despliegue Continuo (CI/CD)** utilizando **GitHub Actions**.
+Este repositorio implementa una pipeline 
 
 ---
 
 ## ✅ Objetivo
 
-- Validar automáticamente los archivos **Markdown** (`*.md`) en cada push o Pull Request hacia `main`.
-- **(Opcional, pero implementado aquí)** Desplegar automáticamente el contenido del repositorio a **GitHub Pages** cuando se realiza un push a `main`.
+- Validar automáticamente los archivos
+- **Markdown** (`*.md`) en cada push o Pull Request hacia `main`.
+- **(Opcional, pero implementado aquí)**
+- Desplegar automáticamente el contenido
+- del repositorio a **GitHub Pages** cuando se realiza un push a `main`.
 
 ---
 
@@ -15,4 +18,4 @@ Este repositorio implementa una pipeline completa de **Integración y Despliegue
 
 El archivo del workflow se encuentra en:
 
-- Contribución realizada a través de un pull request
+- Contribución realizada a través de un pull request, se modifica nuevamente
