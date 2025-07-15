@@ -1,3 +1,7 @@
+
+### Contenido de `ci.yml`:
+
+```yaml
 name: Validar y Desplegar Sitio
 
 on:
@@ -8,23 +12,17 @@ on:
 
 jobs:
   markdown-lint:
-    name: Validar Markdown
+    name: Validación Markdown
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout código
+      - name: Clonar el repositorio
         uses: actions/checkout@v4
 
-      - name: Instalar Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
-
-      - name: Instalar markdownlint-cli
-        run: npm install -g markdownlint-cli
-
       - name: Ejecutar markdownlint
-        run: markdownlint "**/*.md"
+        uses: nosborn/github-action-markdown-cli@v3
+        with:
+          files: '**/*.md'
 
   deploy:
     name: Desplegar a GitHub Pages
@@ -36,13 +34,13 @@ jobs:
       id-token: write
 
     steps:
-      - name: Checkout código
+      - name: Checkout del código
         uses: actions/checkout@v4
 
-      - name: Configurar Pages
+      - name: Configurar GitHub Pages
         uses: actions/configure-pages@v4
 
-      - name: Subir archivos
+      - name: Subir archivos como artefacto
         uses: actions/upload-pages-artifact@v2
         with:
           path: . # Publicamos desde la raíz
