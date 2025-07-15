@@ -1,7 +1,6 @@
 # 🚀 Pipeline CI/CD con GitHub Actions + GitHub Pages
 
 Este repositorio implementa una pipeline 
-
 ---
 
 ## ✅ Objetivo
@@ -18,4 +17,12 @@ Este repositorio implementa una pipeline
 
 El archivo del workflow se encuentra en:
 
+<<<<<<< HEAD
 - Contribución realizada a través de un pull request, se modifica
+=======
+<<<<<<< HEAD
+- Contribución realizada a través de un pull request
+=======
+- Contribución realizada a través de un pull request, se modifica nuevamente
+>>>>>>> 348f9d515d2588e40d8e63540d0c29e577f1efb1
+>>>>>>> main
